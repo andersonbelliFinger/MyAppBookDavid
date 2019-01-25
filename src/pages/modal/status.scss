@@ -1,0 +1,31 @@
+modal-status {
+	width: 85% !important;
+	max-height: 80% !important;
+	right: 0;
+	bottom: 0;
+	border-radius: 5px;
+    margin: auto;
+    border: 1px solid #009967 !important;
+}
+
+modal-status ion-item {
+	padding: 0 !important;
+}
+
+modal-status ion-item .item-inner {
+	padding: 0 8px !important;
+}
+
+modal-status ion-item.selected {
+	background: #82B84D !important;
+	color: #FFFFFF !important;
+}
+
+modal-status ion-item.selected fa-icon {
+	color: #FFFFFF !important;
+}
+
+modal-status button {
+	height: 40px !important;
+	background: #4AB4D9 !important;
+}

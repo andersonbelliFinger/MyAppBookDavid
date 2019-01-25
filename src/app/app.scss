@@ -1,0 +1,105 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+button {
+	box-shadow: none !important;
+	border-radius: 5px !important;
+}
+
+#my-menu ion-content {
+	background: #82B84D !important;
+	color: #FFFFFF !important;
+}
+
+#my-menu #fechar {
+	background: transparent;
+}
+
+#my-menu ion-content ion-select {
+	height: 50px;
+	border: 1px solid #FFFFFF;
+	background: transparent;
+	border-radius: 5px;
+}
+
+#my-menu #foto {
+	height: 85px;
+	width: 85px;
+	border-radius: 50%;
+}
+
+#my-menu ion-content ion-select .select-icon {
+	visibility: hidden;
+}
+
+#my-menu ion-content ion-select .select-text {
+	line-height: 22px;
+	text-align: left;
+}
+
+#my-menu ion-content #seta {
+	position: absolute;
+	top: 35%;
+	right: 5%;
+}
+
+#my-menu ion-content button, #my-menu ion-footer button {
+	height: 44px !important;
+	line-height: 49px !important;
+}
+
+#my-menu ion-content #filtro {
+	background: #009967 !important;
+}
+
+#my-menu ion-footer #sair {
+	background: transparent !important;
+	border: 1px solid #FFFFFF !important;
+}
+
+#my-menu ion-label {
+    font-size: 0.8em;
+}
+
+#my-menu ion-item .item-inner {
+	border: none;
+}
+
+#my-menu ion-item {
+	border-radius: 5px;
+	background: transparent !important;
+	margin-bottom: 16px !important;
+}
+
+#my-menu ion-item#data {
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+}
+
+#my-menu ion-item#data ion-label {
+	color: #FFFFFF !important;
+}
+
+#my-menu #data input::-webkit-input-placeholder {
+	color: #FFFFFF !important;
+}
+#my-menu #data input:-moz-placeholder {
+	color: #FFFFFF !important;
+}
+#my-menu #data input:-ms-input-placeholder {
+	color: #FFFFFF !important;
+}

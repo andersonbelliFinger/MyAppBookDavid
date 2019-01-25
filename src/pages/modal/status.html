@@ -1,0 +1,44 @@
+<ion-list>
+	<ion-item>
+    <small>CHOOSE WHICH STATUS DO YOU WANT SEE</small>
+    <fa-icon name="times" color="danger" item-end (tap)="close()"></fa-icon>
+	</ion-item>
+	<ion-item (tap)="selectAll()" [ngClass]="all ? 'selected' : ''">
+    ALL
+	</ion-item>
+	<ion-item (tap)="set('spinner')" [ngClass]="selected.indexOf('spinner') != -1 ? 'selected' : ''">
+    ATTENDANCE
+    <fa-icon name="spinner" color="primary" item-end></fa-icon>
+	</ion-item>
+	<ion-item (tap)="set('times')" [ngClass]="selected.indexOf('times') != -1 ? 'selected' : ''">
+    CANCELED
+    <fa-icon name="times" color="danger" item-end></fa-icon>
+	</ion-item>
+	<ion-item (tap)="set('thumbs-up')" [ngClass]="selected.indexOf('thumbs-up') != -1 ? 'selected' : ''">
+    CONFIRMED
+    <fa-icon name="thumbs-up" color="secondary" item-end></fa-icon>
+	</ion-item>
+	<ion-item (tap)="set('check')" [ngClass]="selected.indexOf('check') != -1 ? 'selected' : ''">
+    FINISHED
+    <fa-icon name="check" color="secondary" item-end></fa-icon>
+	</ion-item>
+	<ion-item (tap)="set('ban')" [ngClass]="selected.indexOf('ban') != -1 ? 'selected' : ''">
+    MISSED
+    <fa-icon name="ban" color="danger" item-end></fa-icon>
+	</ion-item>
+	<ion-item (tap)="set('thumbs-down')" [ngClass]="selected.indexOf('thumbs-down') != -1 ? 'selected' : ''">
+    NOT CONFIRMED
+    <fa-icon name="thumbs-down" color="danger" item-end></fa-icon>
+	</ion-item>
+	<ion-item (tap)="set('hourglass-start')" [ngClass]="selected.indexOf('hourglass-start') != -1 ? 'selected' : ''">
+    SCHEDULED
+    <fa-icon name="hourglass-start" color="primary" item-end></fa-icon>
+	</ion-item>
+	<ion-item (tap)="set('clock-o')" [ngClass]="selected.indexOf('clock-o') != -1 ? 'selected' : ''">
+    WAIT
+    <fa-icon name="clock-o" color="primary" item-end></fa-icon>
+	</ion-item>
+	<!-- <ion-item>
+    <button ion-button full no-margin (tap)="close()">FILTER</button>
+	</ion-item> -->
+</ion-list>

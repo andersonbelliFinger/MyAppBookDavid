@@ -1,0 +1,94 @@
+page-home ion-header {
+	background: #82B84D;
+	color: #FFFFFF;
+}
+
+page-home ion-header button {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+page-home ion-header button[selected] {
+	background: white !important;
+    color: #82b84d !important;
+}
+
+page-home ion-header button ion-icon {
+	font-size: 2em;
+}
+
+page-home ion-header ion-item {
+	background: transparent !important;
+	border-radius: 5px !important;
+}
+
+page-home ion-header input {
+	color: #FFFFFF;
+}
+
+page-home ion-item .item-inner {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+page-home ion-item#data {
+	margin-bottom: 16px !important;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+
+page-home ion-item#data ion-label {
+	color: #FFFFFF !important;
+}
+
+page-home #data input::-webkit-input-placeholder {
+	color: #FFFFFF !important;
+}
+page-home #data input:-moz-placeholder {
+	color: #FFFFFF !important;
+}
+page-home #data input:-ms-input-placeholder {
+	color: #FFFFFF !important;
+}
+
+page-home .dias {
+	font-size: 4em;
+}
+
+page-home #filtro ion-icon {
+	font-size: 1.5em !important;
+}
+
+page-home #filtro ion-col button {
+	border-radius: 0 !important;
+}
+
+page-home #filtro ion-col:first-child button {
+	border-top-left-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
+}
+
+page-home #filtro ion-col:last-child button {
+	border-top-right-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+}
+
+page-home #filtro button {
+	border: 1px solid #FFFFFF !important;
+	height: 44px;
+}
+
+page-home #filtro button.active {
+	background: #FFFFFF !important;
+	color: #82B84D !important;
+}
+
+page-home #item {
+	border-bottom: 1px solid #CCCCCC !important;
+}
+
+page-home #item ion-item:first-child {
+	padding-left: 8px;
+	border-radius: 0px !important;
+}

@@ -1,0 +1,39 @@
+<ion-content padding>
+  	<ion-grid id="top">
+  		<ion-row>
+  			<ion-col offset-2 col-8 offset-2 padding text-center>
+  				<img src="assets/imgs/logo_colorido.svg" />
+  			</ion-col>
+  		</ion-row>
+  	</ion-grid>
+  	<ion-list>
+  		<ion-item id="email">
+  			<ion-label>
+  				<ion-icon name="md-person"></ion-icon>
+  			</ion-label>
+  			<ion-input [(ngModel)]="email" type="text" placeholder="E-mail" value="raphael.bruno@outlook.com.au"></ion-input>
+  		</ion-item>
+  		<ion-item id="senha">
+  			<ion-label>
+  				<ion-icon name="ios-lock"></ion-icon>
+  			</ion-label>
+  			<ion-input [(ngModel)]="senha" type="password" placeholder="******" value="Raphael@2018"></ion-input>
+  		</ion-item>
+  	</ion-list>
+  	<button id="login" ion-button full (tap)="login()">LOGIN</button>
+  	<ion-grid>
+  		<ion-row>
+  			<ion-col col-6>
+    			<ion-checkbox ([ngModel])="lembrar" class="checkbox-square" checked></ion-checkbox>
+  				Remember me
+  			</ion-col>
+  			<ion-col col-6 text-right>
+  				Forgot password?
+  			</ion-col>
+  		</ion-row>
+  	</ion-grid>
+</ion-content>
+
+<ion-footer padding no-border>
+	MYAPPBOOK © 2018 - ALL RIGHTS RESERVED
+</ion-footer>

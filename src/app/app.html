@@ -1,0 +1,74 @@
+<ion-menu id="my-menu" [content]="content" *ngIf="profissional">
+
+  <ion-header id="myMenu" no-border>
+      <ion-grid>
+        <ion-row>
+          <ion-col no-padding col-2>
+            <button id="fechar" ion-button menuClose>
+                <ion-icon name="md-close"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col-8 text-center>
+            <img src="assets/imgs/logo.svg" />
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row padding-top>
+        <ion-col col-12 text-center>
+            <img id="foto" src="{{ profissional ? profissional.foto : 'assets/imgs/profile.png' }}" />
+        </ion-col>
+      </ion-row>
+        <ion-row>
+          <ion-col col-10 offset-1 text-center no-padding>
+            <ion-item style="margin-bottom: 0px !important;">
+              <ion-input type="text" text-center disabled value="HELLO {{ profissional ? profissional.nome : '' }}"></ion-input>
+            </ion-item>
+          </ion-col>
+      </ion-row>
+      <ion-row *ngIf="profissional.funcionarios.length">
+        <ion-col col-12 text-center no-padding>
+          <ion-label>WHICH PROFESSIONAL DO YOU WANT SEE</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="profissional.funcionarios.length" margin-bottom>
+        <ion-col col-10 offset-1 text-center no-padding>  
+          <ion-select col-12 [(ngModel)]="funcionario" (ionChange)="onChange($event)">
+              <ion-option value="{{ funcionario.id }}" *ngFor="let funcionario of profissional.funcionarios" [selected]="profissional.id_profissional == funcionario.id">{{ funcionario.nome }}</ion-option>
+          </ion-select>
+          <ion-icon id="seta" name="ios-arrow-down-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+        <ion-row>
+          <ion-col col-10 offset-1 text-center no-padding>
+            <ion-item id="data">
+              <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="data" (blur)="updateDate($event)"></ion-datetime>
+              <ion-icon item-right name="ios-calendar-outline"></ion-icon>
+            </ion-item>
+          </ion-col>
+      </ion-row>
+        <ion-row>
+          <ion-col col-10 offset-1 text-center no-padding margin-bottom>
+            <button id="filtro" ion-button full (click)="filter()" menuClose>FILTER</button>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+  <ion-footer no-border>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-10 offset-1 text-center no-padding margin-bottom>
+            <button id="sair" ion-button full (click)="logout()" menuClose>LOGOUT</button>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

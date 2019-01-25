@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = http://finger05-1.fingerprint.local:9090/drocha/app-kort.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

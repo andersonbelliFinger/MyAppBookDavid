@@ -1,0 +1,90 @@
+login-page ion-content {
+	background-image: url('../assets/imgs/fundo_login.png');
+	background-position: center;
+	background-size: 100%;
+	color: #82B84D !important;
+}
+
+login-page ion-footer {
+	color: #82B84D !important;
+	text-align: center !important;
+	background: transparent !important;
+}
+
+login-page ion-grid#top {
+	height: 40%;
+	max-height: 300px;
+}
+
+login-page ion-grid#top ion-row {
+	margin: auto 0 0 0;
+}
+
+login-page button#login {
+	border-radius: 5px !important;
+	background: #82B84D !important;
+	height: 48px !important;
+}
+
+login-page ion-checkbox {
+	vertical-align: sub !important;
+}
+
+login-page ion-checkbox .checkbox-icon {
+	border-color: #82B84D !important;
+}
+
+login-page ion-checkbox .checkbox-checked {
+	border-color: #82B84D !important;
+    background-color: #82B84D !important;
+}
+
+login-page ion-item {
+	background: transparent !important;
+	border-radius: 5px !important;
+	box-shadow: none !important;
+}
+
+login-page ion-item .item-inner {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+login-page ion-item#email {
+	margin-bottom: 16px !important;
+	border: 1px solid #82B84D;
+	color: #82B84D;
+}
+
+login-page ion-item#email ion-label {
+	color: #82B84D !important;
+}
+
+login-page #email input::-webkit-input-placeholder {
+	color: #82B84D !important;
+}
+login-page #email input:-moz-placeholder {
+	color: #82B84D !important;
+}
+login-page #email input:-ms-input-placeholder {
+	color: #82B84D !important;
+}
+
+login-page ion-item#senha {
+	border: 1px solid #0085AE;
+	color: #0085AE;
+}
+
+login-page ion-item#senha ion-label {
+	color: #0085AE !important;
+}
+
+login-page #senha input::-webkit-input-placeholder {
+	color: #0085AE !important;
+}
+login-page #senha input:-moz-placeholder {
+	color: #0085AE !important;
+}
+login-page #senha input:-ms-input-placeholder {
+	color: #0085AE !important;
+}
